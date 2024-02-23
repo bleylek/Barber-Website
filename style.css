@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik Dirt', cursive;
+}
+
+#first{
+    background-image: linear-gradient(rgba(29, 28, 28, 0.5), #d11421),url(images/pexels-thgusstavo-santana-1813272.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.logo{
+    text-align: center;
+}
+#span1{
+    color: rgb(242, 6, 10);
+    font-size: 50px;
+}
+#span2{
+    color: rgb(185, 181, 181);
+    font-size: 50px;
+}
+#span3{
+    color: rgb(242, 6, 10);
+    font-size: 50px;
+}
+#span4{
+    color: rgb(185, 181, 181);
+    font-size: 50px;
+}
+#span5{
+    color: rgb(242, 6, 10);
+    font-size: 50px;
+}
+#span6{
+    color: rgb(185, 181, 181);
+    font-size: 50px;
+}
+
+.first-text{
+    text-align: center;
+    color: #fff;
+    padding-top: 170px;
+}
+
+.first-text h1{
+    font-size: 150px;
+    color: rgb(223, 213, 213);
+}
+
+/* Responsive design adjustments: reduces font size of h1 elements within .first-text for screens narrower than 770px to maintain readability on smaller devices. */
+@media screen and (max-width: 770px){
+
+    .first-text h1{
+        font-size: 100px;
+        color: rgb(223, 213, 213);
+    }
+}
+
+
+
+#choose{
+    width: 100%;
+    padding: 70px 0;
+    background: rgb(185, 181, 181)
+}
+
+.title-text{
+    text-align: center;
+    padding-bottom: 70px;
+    font-size: 40px;
+}
+
+.forFeatures{
+    width: 75%;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.features{
+    flex-basis: 50%;
+}
+
+.features-img{
+    flex-basis: 50%;
+    margin: auto;
+}
+
+.features-img img{
+    border-radius: 8px;
+    width: 70%;
+}
+
+.features h1{
+    text-align: left;
+    color: rgb(242, 6, 10);
+    margin-bottom: 10px;
+    font-weight: 110;
+}
+
+.features-text{
+    margin-bottom: 40px;
+}
+
+.features-text p{
+    text-align: initial;
+}
+
+@media screen and (max-width: 770px){
+    .title-text{
+        text-align: center;
+        padding-bottom: 70px;
+        font-size: 20px;
+    }
+    .features{
+        flex-basis: 100%;
+    }
+    .features-img{
+        flex-basis: 100%;
+    }
+    .features-img img{
+        border-radius: 8px;
+        width: 100%;
+    }
+}
+
+
+#services{
+    width: 100%;
+    padding: 70px 0;
+}
+
+.boxesForServices{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.service{
+    color: white;
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 22px;
+    position: relative;
+}
+.service img{
+    width: 100%;
+    border-radius: 8px;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: linear-gradient(rgba(29, 28, 28, 0.5), #d11421);
+    border-radius: 8px;
+    opacity: 0;
+    transition: 1.5s;
+}
+
+.service:hover .overlay{
+    opacity: 1;
+}
+
+.services-descriptions{
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 1.5s;
+}
+
+hr{
+    height: 2px;
+    border: 0;
+    margin: 16px auto;
+    width: 65%;
+    background-color: #fff;
+}
+
+.services-descriptions p{
+    font-size: 16px;
+}
+
+.service:hover .services-descriptions{
+    bottom: 40%;
+    opacity: 1;
+}
+
+.services-descriptions p{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media screen and (max-width: 770px){
+    .services-descriptions p{
+        font-size: 12px;
+    }
+    .service{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    hr{
+        margin: 5px auto;
+    }
+    .service:hover .services-descriptions{
+        bottom: 25%;
+    }
+}
+
+#testimonial{
+    width: 100%;
+    padding: 70px 0;
+    background: rgb(185, 181, 181)
+}
+.testimonials{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.columnForTestimonial{
+    flex-basis: 30%; /*divides into 3*/
+    padding: 12px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px 3px gray;
+    transition: transform 1s;
+}
+.columnForTestimonial p{
+
+}
+.client{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.client img{
+    width: 50px;
+    height: 40px;
+    margin-right: 20px;
+    border-radius: 2px;
+}
+.columnForTestimonial:hover{
+    transform: translateY(-8px);
+}
+@media screen and (max-width: 770px){
+    .columnForTestimonial{
+        flex-basis: 100%;
+    }
+}
+
+#footer{
+    padding: 100px 0 10px;
+    position: relative;
+}
+
+.rowForFooter{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.left, .right{
+    margin-bottom: 22px;
+    padding: 10px;
+    flex-basis: 45%;
+}
+.right{
+    text-align: right;
+}
+
+.rowForFooter h1{
+    margin: 10px 0;
+}
+.rowForFooter p{
+    line-height: 30px;
+}
+
+.footerImage{
+    max-width: 380px;
+    opacity: 0.2;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+}
+
+.socialMedia{
+    text-align: center;
+}
+.socialMedia a{
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    margin: 40px 10px 0;
+    cursor: pointer;
+}
+
+.socialMedia p{
+    font-size: 14px;
+    margin-top: 10px;
+}
+@media screen and (max-width: 770px){
+    .left, .right{
+        flex-basis: 100%;
+        font-size: 13px;
+    }
+    
+}
